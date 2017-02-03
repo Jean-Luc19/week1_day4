@@ -48,8 +48,8 @@ $('button').click(function(){
   event.preventDefault();
   $("dl").removeClass('hidden');
   var $text = $('textarea').val();
-  $(".js-wordcount").append(calcTotalWords($text));
-  $(".js-unique-wordcount").append(calcUniqueWords($text));
-  $(".js-avg-wordcount").append(averageWordLength($text));
-  $(".js-avg-sentence").append(averageSentenceLength($text));
+  $(".js-wordcount").text(calcTotalWords($text));
+  $(".js-unique-wordcount").text(calcUniqueWords($text));
+  $(".js-avg-wordcount").text(averageWordLength($text));
+  $(".js-avg-sentence").text(averageSentenceLength($text));
 });
